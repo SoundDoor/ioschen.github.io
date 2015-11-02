@@ -4,7 +4,7 @@
   <subtitle><![CDATA[得良哥一诺，如得黄金万两]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ioschen.com/"/>
-  <updated>2015-11-02T07:20:12.000Z</updated>
+  <updated>2015-11-02T08:14:00.000Z</updated>
   <id>http://ioschen.com/</id>
   
   <author>
@@ -18,10 +18,11 @@
     <title><![CDATA[Hello World]]></title>
     <link href="http://ioschen.com/2015/11/02/hello-world/"/>
     <id>http://ioschen.com/2015/11/02/hello-world/</id>
-    <published>2015-11-02T07:20:12.000Z</published>
-    <updated>2015-11-02T07:20:12.000Z</updated>
+    <published>2015-11-02T08:14:00.000Z</published>
+    <updated>2015-11-02T08:14:00.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
@@ -29,18 +30,10 @@
 <p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-<a id="more"></a>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html">Deployment</a></p>]]>
+<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>]]>
     
     </summary>
     
@@ -163,7 +156,7 @@
     <link href="http://ioschen.com/2014/12/10/bestapp/"/>
     <id>http://ioschen.com/2014/12/10/bestapp/</id>
     <published>2014-12-10T03:14:23.000Z</published>
-    <updated>2015-01-07T14:02:01.000Z</updated>
+    <updated>2015-11-02T08:15:04.000Z</updated>
     <content type="html"><![CDATA[<h2 id="必备软件">必备软件</h2><ol>
 <li>dropbox</li>
 <li>mou</li>
@@ -171,13 +164,14 @@
 <li>readkit</li>
 <li>colorsnapper</li>
 </ol>
+<a id="more"></a>
 <h2 id="快捷键组合">快捷键组合</h2><ol>
 <li>Shift+Command+G 三个组合按键查找文件</li>
 <li>在你创建仓库的目录下有个隐藏文件叫”.git”把这个文件删除就可以了。</li>
 </ol>
 <h2 id="网站">网站</h2><p>dnspod</p>
 <hr>
-<h1 id="超链接，页面设置">超链接，页面设置</h1><h1 id="定位技术（表格、层、框架）。">定位技术（表格、层、框架）。</h1><a id="more"></a>]]></content>
+<h1 id="超链接，页面设置">超链接，页面设置</h1><h1 id="定位技术（表格、层、框架）。">定位技术（表格、层、框架）。</h1><!--more-->]]></content>
     <summary type="html">
     <![CDATA[你对本页的描述]]>
     
@@ -407,7 +401,7 @@
 <h2 id="参与交流">参与交流</h2><p>欢迎大家讲珍藏已久的经典免费书籍共享出来，您可以：</p>
 <ul>
 <li>使用 <a href="https://github.com/justjavac/free-programming-books-zh_CN/issues" target="_blank" rel="external">Issues</a> 以及 Pull Request </li>
-<li>发邮箱给我 <a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x6a;&#x75;&#x73;&#x74;&#106;&#97;&#118;&#97;&#99;&#x2b;&#103;&#x68;&#x62;&#111;&#x6f;&#107;&#x73;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#109;">&#x6a;&#x75;&#x73;&#x74;&#106;&#97;&#118;&#97;&#99;&#x2b;&#103;&#x68;&#x62;&#111;&#x6f;&#107;&#x73;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#109;</a></li>
+<li>发邮箱给我 <a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x6a;&#117;&#x73;&#x74;&#106;&#x61;&#118;&#97;&#x63;&#43;&#x67;&#104;&#98;&#111;&#111;&#107;&#115;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;">&#x6a;&#117;&#x73;&#x74;&#106;&#x61;&#118;&#97;&#x63;&#43;&#x67;&#104;&#98;&#111;&#111;&#107;&#115;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;</a></li>
 <li>来 <a href="http://segmentfault.com/q/1010000000329895" target="_blank" rel="external">SegmentFault</a> 交流</li>
 </ul>
 <p><strong>注</strong>：看到有人 fork 此 repository，其实如果觉得有帮助，可以 star 或者 watch，<br>如果 fork 到你的 repositories 下则不能保证你的 repo 是最新的，除非是主动定期的 pull。</p>
@@ -650,7 +644,7 @@
 <h2 id="参与交流">参与交流</h2><p>欢迎大家讲珍藏已久的经典免费书籍共享出来，您可以：</p>
 <ul>
 <li>使用 <a href="https://github.com/justjavac/free-programming-books-zh_CN/issues">Issues</a> 以及 Pull Request </li>
-<li>发邮箱给我 <a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x6a;&#x75;&#x73;&#x74;&#106;&#97;&#118;&#97;&#99;&#x2b;&#103;&#x68;&#x62;&#111;&#x6f;&#107;&#x73;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#109;">&#x6a;&#x75;&#x73;&#x74;&#106;&#97;&#118;&#97;&#99;&#x2b;&#103;&#x68;&#x62;&#111;&#x6f;&#107;&#x73;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#109;</a></li>
+<li>发邮箱给我 <a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x6a;&#117;&#x73;&#x74;&#106;&#x61;&#118;&#97;&#x63;&#43;&#x67;&#104;&#98;&#111;&#111;&#107;&#115;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;">&#x6a;&#117;&#x73;&#x74;&#106;&#x61;&#118;&#97;&#x63;&#43;&#x67;&#104;&#98;&#111;&#111;&#107;&#115;&#64;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;</a></li>
 <li>来 <a href="http://segmentfault.com/q/1010000000329895">SegmentFault</a> 交流</li>
 </ul>
 <p><strong>注</strong>：看到有人 fork 此 repository，其实如果觉得有帮助，可以 star 或者 watch，<br>如果 fork 到你的 repositories 下则不能保证你的 repo 是最新的，除非是主动定期的 pull。</p>
