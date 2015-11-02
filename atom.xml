@@ -40,23 +40,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[test]]></title>
-    <link href="http://ioschen.com/2015/11/02/test/"/>
-    <id>http://ioschen.com/2015/11/02/test/</id>
-    <published>2015-11-02T06:45:32.000Z</published>
-    <updated>2015-11-02T07:26:02.000Z</updated>
-    <content type="html"><![CDATA[<p>asdfdfa</p>
-<a id="more"></a>]]></content>
-    <summary type="html">
-    <![CDATA[<p>asdfdfa</p>]]>
-    
-    </summary>
-    
-      <category term="js" scheme="http://ioschen.com/tags/js/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Swift获取WIFI的SSID 和Swift获取IP]]></title>
     <link href="http://ioschen.com/2015/08/17/swiftssid/"/>
     <id>http://ioschen.com/2015/08/17/swiftssid/</id>
@@ -156,7 +139,7 @@
     <link href="http://ioschen.com/2014/12/10/bestapp/"/>
     <id>http://ioschen.com/2014/12/10/bestapp/</id>
     <published>2014-12-10T03:14:23.000Z</published>
-    <updated>2015-11-02T08:15:04.000Z</updated>
+    <updated>2015-11-02T08:36:13.000Z</updated>
     <content type="html"><![CDATA[<h2 id="必备软件">必备软件</h2><ol>
 <li>dropbox</li>
 <li>mou</li>
@@ -177,7 +160,9 @@
     
     </summary>
     
-      <category term="APP,技巧" scheme="http://ioschen.com/tags/APP-%E6%8A%80%E5%B7%A7/"/>
+      <category term="APP" scheme="http://ioschen.com/tags/APP/"/>
+    
+      <category term="技巧" scheme="http://ioschen.com/tags/%E6%8A%80%E5%B7%A7/"/>
     
       <category term="default" scheme="http://ioschen.com/categories/default/"/>
     
@@ -384,7 +369,7 @@
 <h2 id="参与交流">参与交流</h2><p>欢迎大家讲珍藏已久的经典免费书籍共享出来，您可以：</p>
 <ul>
 <li>使用 <a href="https://github.com/justjavac/free-programming-books-zh_CN/issues" target="_blank" rel="external">Issues</a> 以及 Pull Request </li>
-<li>发邮箱给我 <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x6a;&#x75;&#x73;&#116;&#x6a;&#97;&#x76;&#97;&#x63;&#x2b;&#x67;&#x68;&#x62;&#111;&#111;&#107;&#x73;&#x40;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#x6a;&#x75;&#x73;&#116;&#x6a;&#97;&#x76;&#97;&#x63;&#x2b;&#x67;&#x68;&#x62;&#111;&#111;&#107;&#x73;&#x40;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;</a></li>
+<li>发邮箱给我 <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x6a;&#x75;&#115;&#116;&#x6a;&#97;&#118;&#x61;&#x63;&#x2b;&#x67;&#x68;&#x62;&#111;&#x6f;&#107;&#x73;&#x40;&#103;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#111;&#109;">&#x6a;&#x75;&#115;&#116;&#x6a;&#97;&#118;&#x61;&#x63;&#x2b;&#x67;&#x68;&#x62;&#111;&#x6f;&#107;&#x73;&#x40;&#103;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#111;&#109;</a></li>
 <li>来 <a href="http://segmentfault.com/q/1010000000329895" target="_blank" rel="external">SegmentFault</a> 交流</li>
 </ul>
 <p><strong>注</strong>：看到有人 fork 此 repository，其实如果觉得有帮助，可以 star 或者 watch，<br>如果 fork 到你的 repositories 下则不能保证你的 repo 是最新的，除非是主动定期的 pull。</p>
@@ -627,7 +612,7 @@
 <h2 id="参与交流">参与交流</h2><p>欢迎大家讲珍藏已久的经典免费书籍共享出来，您可以：</p>
 <ul>
 <li>使用 <a href="https://github.com/justjavac/free-programming-books-zh_CN/issues">Issues</a> 以及 Pull Request </li>
-<li>发邮箱给我 <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x6a;&#x75;&#x73;&#116;&#x6a;&#97;&#x76;&#97;&#x63;&#x2b;&#x67;&#x68;&#x62;&#111;&#111;&#107;&#x73;&#x40;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#x6a;&#x75;&#x73;&#116;&#x6a;&#97;&#x76;&#97;&#x63;&#x2b;&#x67;&#x68;&#x62;&#111;&#111;&#107;&#x73;&#x40;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;</a></li>
+<li>发邮箱给我 <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x6a;&#x75;&#115;&#116;&#x6a;&#97;&#118;&#x61;&#x63;&#x2b;&#x67;&#x68;&#x62;&#111;&#x6f;&#107;&#x73;&#x40;&#103;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#111;&#109;">&#x6a;&#x75;&#115;&#116;&#x6a;&#97;&#118;&#x61;&#x63;&#x2b;&#x67;&#x68;&#x62;&#111;&#x6f;&#107;&#x73;&#x40;&#103;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#111;&#109;</a></li>
 <li>来 <a href="http://segmentfault.com/q/1010000000329895">SegmentFault</a> 交流</li>
 </ul>
 <p><strong>注</strong>：看到有人 fork 此 repository，其实如果觉得有帮助，可以 star 或者 watch，<br>如果 fork 到你的 repositories 下则不能保证你的 repo 是最新的，除非是主动定期的 pull。</p>
@@ -1753,6 +1738,116 @@ NIL
 <p>以前买东西的时候总是在乎涨价了，降价了，比价什么的，这个固然重要，但是只要自己开心就好，</p>]]>
     
     </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[game]]></title>
+    <link href="http://ioschen.com/2014/01/20/game/"/>
+    <id>http://ioschen.com/2014/01/20/game/</id>
+    <published>2014-01-20T01:03:01.000Z</published>
+    <updated>2014-01-20T03:13:11.000Z</updated>
+    <content type="html"><![CDATA[<p>#游戏开发<br>游戏开发最重要的就是选好游戏引擎</p>
+<p>##游戏引擎<br>我所知道的公开的比较红得也就那几个</p>
+<ol>
+<li>cocos2d (已经出局)</li>
+<li>cocos2d-x</li>
+<li>Unity3d</li>
+<li>sprite kit</li>
+</ol>
+<p>#性能对比<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">表格使用</span><br><span class="line">sprite kit |<span class="string"> cocos2d-x </span>|<span class="string">unity3d </span><br><span class="line">-</span>|<span class="string">-</span>|<span class="string">-</span>|</span><br><span class="line">fddfs |<span class="string"> df </span>|<span class="string"> fds/</span>|<span class="string"> </span><br><span class="line">1. 最后一个转义字符/</span><br><span class="line">2. 每个环境对语法的支持不一样,效果不一样,主题也可以决定效果</span><br><span class="line">3. hexo里面第二排必须n个-</span>|<span class="string">  -</span>|<span class="string">标书一列</span></span><br></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>sprite kit</th>
+<th>cocos2d-x</th>
+<th>unity3d </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><font color="red">优点</font></td>
+<td>fddfs</td>
+<td>df</td>
+<td>fds/</td>
+<td></td>
+</tr>
+<tr>
+<td><font color="red">缺点</font></td>
+<td>是</td>
+<td>s</td>
+<td>s</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>##我的结论<br>游戏开发只选apple的<code>sprite kit</code>虽然这个不稳定,<br>后起,如果苹果倒了,就全倒了</p>
+<p>#数学公式<br>    <script type="math/tex">E=mc^2</script><br>    数学公式</p>
+<script type="math/tex">E=mc^2</script>
+
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">以下是几个三角恒等式：</span><br><span class="line">&lt;script type="math/tex; mode=display"&gt;</span><br><span class="line"><span class="command">\begin</span><span class="special">&#123;</span>align<span class="special">&#125;</span></span><br><span class="line"><span class="command">\sin</span> <span class="command">\left</span>(x+y<span class="command">\right</span>)=<span class="command">\sin</span> x <span class="command">\cos</span> y + <span class="command">\cos</span> x <span class="command">\sin</span> y<span class="command">\\</span></span><br><span class="line"><span class="command">\cos</span> <span class="command">\left</span>(x+y<span class="command">\right</span>)=<span class="command">\cos</span> x <span class="command">\cos</span> y - <span class="command">\sin</span> x <span class="command">\sin</span> y</span><br><span class="line"><span class="command">\end</span><span class="special">&#123;</span>align<span class="special">&#125;</span></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>以下是几个三角恒等式：</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\sin \left(x+y\right)=\sin x \cos y + \cos x \sin y\\
+\cos \left(x+y\right)=\cos x \cos y - \sin x \sin y
+\end{align}
+</script>
+
+<a id="more"></a>]]></content>
+    <summary type="html">
+    <![CDATA[<p>#游戏开发<br>游戏开发最重要的就是选好游戏引擎</p>
+<p>##游戏引擎<br>我所知道的公开的比较红得也就那几个</p>
+<ol>
+<li>cocos2d (已经出局)</li>
+<li>cocos2d-x</li>
+<li>Unity3d</li>
+<li>sprite kit</li>
+</ol>
+<p>#性能对比<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">表格使用</span><br><span class="line">sprite kit |<span class="string"> cocos2d-x </span>|<span class="string">unity3d </span><br><span class="line">-</span>|<span class="string">-</span>|<span class="string">-</span>|</span><br><span class="line">fddfs |<span class="string"> df </span>|<span class="string"> fds/</span>|<span class="string"> </span><br><span class="line">1. 最后一个转义字符/</span><br><span class="line">2. 每个环境对语法的支持不一样,效果不一样,主题也可以决定效果</span><br><span class="line">3. hexo里面第二排必须n个-</span>|<span class="string">  -</span>|<span class="string">标书一列</span></span><br></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>sprite kit</th>
+<th>cocos2d-x</th>
+<th>unity3d </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><font color=red>优点</font></td>
+<td>fddfs</td>
+<td>df</td>
+<td>fds/</td>
+<td></td>
+</tr>
+<tr>
+<td><font color=red>缺点</font></td>
+<td>是</td>
+<td>s</td>
+<td>s</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>##我的结论<br>游戏开发只选apple的<code>sprite kit</code>虽然这个不稳定,<br>后起,如果苹果倒了,就全倒了</p>
+<p>#数学公式<br>    <script type="math/tex">E=mc^2</script><br>    数学公式</p>
+<script type="math/tex">E=mc^2</script>
+
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">以下是几个三角恒等式：</span><br><span class="line">&lt;script type="math/tex; mode=display"&gt;</span><br><span class="line"><span class="command">\begin</span><span class="special">&#123;</span>align<span class="special">&#125;</span></span><br><span class="line"><span class="command">\sin</span> <span class="command">\left</span>(x+y<span class="command">\right</span>)=<span class="command">\sin</span> x <span class="command">\cos</span> y + <span class="command">\cos</span> x <span class="command">\sin</span> y<span class="command">\\</span></span><br><span class="line"><span class="command">\cos</span> <span class="command">\left</span>(x+y<span class="command">\right</span>)=<span class="command">\cos</span> x <span class="command">\cos</span> y - <span class="command">\sin</span> x <span class="command">\sin</span> y</span><br><span class="line"><span class="command">\end</span><span class="special">&#123;</span>align<span class="special">&#125;</span></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>以下是几个三角恒等式：</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\sin \left(x+y\right)=\sin x \cos y + \cos x \sin y\\
+\cos \left(x+y\right)=\cos x \cos y - \sin x \sin y
+\end{align}
+</script>]]>
+    
+    </summary>
+    
+      <category term="game" scheme="http://ioschen.com/tags/game/"/>
     
   </entry>
   
