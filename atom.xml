@@ -4,7 +4,7 @@
   <subtitle><![CDATA[得良哥一诺，如得黄金万两]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ioschen.com/"/>
-  <updated>2015-11-02T08:14:00.000Z</updated>
+  <updated>2015-08-17T07:50:52.000Z</updated>
   <id>http://ioschen.com/</id>
   
   <author>
@@ -13,31 +13,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://ioschen.com/2015/11/02/hello-world/"/>
-    <id>http://ioschen.com/2015/11/02/hello-world/</id>
-    <published>2015-11-02T08:14:00.000Z</published>
-    <updated>2015-11-02T08:14:00.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>]]>
-    
-    </summary>
-    
-  </entry>
   
   <entry>
     <title><![CDATA[Swift获取WIFI的SSID 和Swift获取IP]]></title>
@@ -369,7 +344,7 @@
 <h2 id="参与交流">参与交流</h2><p>欢迎大家讲珍藏已久的经典免费书籍共享出来，您可以：</p>
 <ul>
 <li>使用 <a href="https://github.com/justjavac/free-programming-books-zh_CN/issues" target="_blank" rel="external">Issues</a> 以及 Pull Request </li>
-<li>发邮箱给我 <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#58;&#106;&#x75;&#x73;&#x74;&#106;&#x61;&#118;&#x61;&#x63;&#x2b;&#103;&#104;&#x62;&#111;&#111;&#107;&#115;&#x40;&#103;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#106;&#x75;&#x73;&#x74;&#106;&#x61;&#118;&#x61;&#x63;&#x2b;&#103;&#104;&#x62;&#111;&#111;&#107;&#115;&#x40;&#103;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a></li>
+<li>发邮箱给我 <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#106;&#x75;&#115;&#116;&#106;&#97;&#x76;&#97;&#x63;&#x2b;&#x67;&#104;&#x62;&#x6f;&#111;&#x6b;&#x73;&#x40;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#106;&#x75;&#115;&#116;&#106;&#97;&#x76;&#97;&#x63;&#x2b;&#x67;&#104;&#x62;&#x6f;&#111;&#x6b;&#x73;&#x40;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></li>
 <li>来 <a href="http://segmentfault.com/q/1010000000329895" target="_blank" rel="external">SegmentFault</a> 交流</li>
 </ul>
 <p><strong>注</strong>：看到有人 fork 此 repository，其实如果觉得有帮助，可以 star 或者 watch，<br>如果 fork 到你的 repositories 下则不能保证你的 repo 是最新的，除非是主动定期的 pull。</p>
@@ -612,7 +587,7 @@
 <h2 id="参与交流">参与交流</h2><p>欢迎大家讲珍藏已久的经典免费书籍共享出来，您可以：</p>
 <ul>
 <li>使用 <a href="https://github.com/justjavac/free-programming-books-zh_CN/issues">Issues</a> 以及 Pull Request </li>
-<li>发邮箱给我 <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#58;&#106;&#x75;&#x73;&#x74;&#106;&#x61;&#118;&#x61;&#x63;&#x2b;&#103;&#104;&#x62;&#111;&#111;&#107;&#115;&#x40;&#103;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#106;&#x75;&#x73;&#x74;&#106;&#x61;&#118;&#x61;&#x63;&#x2b;&#103;&#104;&#x62;&#111;&#111;&#107;&#115;&#x40;&#103;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a></li>
+<li>发邮箱给我 <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#106;&#x75;&#115;&#116;&#106;&#97;&#x76;&#97;&#x63;&#x2b;&#x67;&#104;&#x62;&#x6f;&#111;&#x6b;&#x73;&#x40;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#106;&#x75;&#115;&#116;&#106;&#97;&#x76;&#97;&#x63;&#x2b;&#x67;&#104;&#x62;&#x6f;&#111;&#x6b;&#x73;&#x40;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></li>
 <li>来 <a href="http://segmentfault.com/q/1010000000329895">SegmentFault</a> 交流</li>
 </ul>
 <p><strong>注</strong>：看到有人 fork 此 repository，其实如果觉得有帮助，可以 star 或者 watch，<br>如果 fork 到你的 repositories 下则不能保证你的 repo 是最新的，除非是主动定期的 pull。</p>
@@ -1848,6 +1823,35 @@ NIL
     </summary>
     
       <category term="game" scheme="http://ioschen.com/tags/game/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[writer]]></title>
+    <link href="http://ioschen.com/2014/01/19/writer/"/>
+    <id>http://ioschen.com/2014/01/19/writer/</id>
+    <published>2014-01-19T01:35:02.000Z</published>
+    <updated>2014-01-19T09:00:57.000Z</updated>
+    <content type="html"><![CDATA[<p>#HTML设置属性,配合Markdown</p>
+<p>##字体大小和色彩等<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">font</span> <span class="attribute">size</span>=<span class="value">20</span> <span class="attribute">color</span>=<span class="value">red</span>&gt;</span>文字四大行<span class="tag">&lt;/<span class="title">font</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<font size="20" color="red">文字四大行</font>
+
+<p>##字体背景色和空格<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">##<span class="title">&lt;span style="background-color: #ff6600;"&gt;</span>你的文字<span class="title">&lt;/span&gt;</span></span></span><br><span class="line"> 前面加<span class="preprocessor">#等markdown语法也可以用</span></span><br><span class="line"> &amp;nbsp;是空格</span><br><span class="line"> 下面这个做排版的标题很好,颜色自己选择</span><br><span class="line"> <span class="preprocessor">##<span class="title">&lt;span style="background-color: #ff6600;"&gt;</span>你的文字&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span class="title">&lt;/span&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<p>##<span style="background-color: #ff6600;">你的文字&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p>##添加音频</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">embed</span> <span class="attribute">src</span>=<span class="value">"http://www.xiami.com/widget/0_3515679/singlePlayer.swf"</span> <span class="attribute">type</span>=<span class="value">"application/x-shockwave-flash"</span> <span class="attribute">width</span>=<span class="value">"257"</span> <span class="attribute">height</span>=<span class="value">"33"</span> <span class="attribute">wmode</span>=<span class="value">"transparent"</span>&gt;</span><span class="tag">&lt;/<span class="title">embed</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<embed src="http://www.xiami.com/widget/0_3515679/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent">
+
+
+<p>##添加视频<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">iframe</span> <span class="attribute">height</span>=<span class="value">498</span> <span class="attribute">width</span>=<span class="value">510</span> <span class="attribute">src</span>=<span class="value">"http://player.youku.com/embed/XMjI2MjU3MDMy"</span>  <span class="attribute">frameborder</span>=<span class="value">0</span> <span class="attribute">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="title">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XMjI2MjU3MDMy" frameborder="0" allowfullscreen></iframe>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>#HTML设置属性,配合Markdown</p>
+<p>##字体大小和色彩等<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br]]>
+    </summary>
+    
+      <category term="hexo" scheme="http://ioschen.com/tags/hexo/"/>
     
   </entry>
   
