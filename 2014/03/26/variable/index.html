@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>变量 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="引子基本程序构造单元——变量。
+Common Lisp支持两种类型的变量:词法（lexical）变量和动态（dynamic）变量。（动态变量有时也叫做特殊变量 special variable）这两中变量对应类型分别对应其他语言的局部变量和全局变量，不过，只能说是大致相似一方面某些语言中的局部变量更像是Common Lisp的动态变量。另一方面，某些语言中的局部变量虽然是词法作用域的，但并没有提供">
+<meta property="og:type" content="article">
+<meta property="og:title" content="变量">
+<meta property="og:url" content="http://ioschen.com/2014/03/26/variable/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="引子基本程序构造单元——变量。
+Common Lisp支持两种类型的变量:词法（lexical）变量和动态（dynamic）变量。（动态变量有时也叫做特殊变量 special variable）这两中变量对应类型分别对应其他语言的局部变量和全局变量，不过，只能说是大致相似一方面某些语言中的局部变量更像是Common Lisp的动态变量。另一方面，某些语言中的局部变量虽然是词法作用域的，但并没有提供">
+<meta property="og:updated_time" content="2014-04-06T11:12:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="变量">
+<meta name="twitter:description" content="引子基本程序构造单元——变量。
+Common Lisp支持两种类型的变量:词法（lexical）变量和动态（dynamic）变量。（动态变量有时也叫做特殊变量 special variable）这两中变量对应类型分别对应其他语言的局部变量和全局变量，不过，只能说是大致相似一方面某些语言中的局部变量更像是Common Lisp的动态变量。另一方面，某些语言中的局部变量虽然是词法作用域的，但并没有提供">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="https://avatars2.githubusercontent.com/u/5210832?v=3&amp;s=460" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Whale Chen</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="/" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/APP-技巧/" style="font-size: 10px;">APP,技巧</a> <a href="/tags/Common-lisp/" style="font-size: 20px;">Common lisp</a> <a href="/tags/Mac软件/" style="font-size: 15px;">Mac软件</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/freebsd/" style="font-size: 10px;">freebsd</a> <a href="/tags/game/" style="font-size: 10px;">game</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/ios/" style="font-size: 15px;">ios</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/ruby/" style="font-size: 10px;">ruby</a> <a href="/tags/swift-ssid/" style="font-size: 10px;">swift ssid</a> <a href="/tags/人性/" style="font-size: 10px;">人性</a> <a href="/tags/思想-思考/" style="font-size: 10px;">思想 思考</a> <a href="/tags/灵感/" style="font-size: 10px;">灵感</a> <a href="/tags/资料分享/" style="font-size: 10px;">资料分享</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Whale Chen</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="https://avatars2.githubusercontent.com/u/5210832?v=3&amp;s=460" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Whale Chen</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="/" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-variable" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/03/26/variable/" class="article-date">
+  	<time datetime="2014-03-25T18:11:27.000Z" itemprop="datePublished">2014-03-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      变量
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Common-lisp/">Common lisp</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="引子">引子</h1><p>基本程序构造单元——变量。</p>
+<p>Common Lisp支持两种类型的变量:词法（lexical）变量和动态（dynamic）变量。（动态变量有时也叫做特殊变量 special variable）这两中变量对应类型分别对应其他语言的局部变量和全局变量，<strong>不过，只能说是大致相似</strong>一方面某些语言中的局部变量更像是Common Lisp的动态变量。另一方面，某些语言中的局部变量虽然是词法作用域的，但并没有提供由Common Lisp的词法变量所提供的所有功能，尤其是并非所有语言都提供了支持闭包的词法作用域变量。</p>
+<p><del>许多含有变量表达式都可以同时使用词法变量和动态变量</del></p>
+<h1 id="变量的基础知识">变量的基础知识</h1><p>和其他语言一样，Common Lisp中的变量是一些可以保存值得具名位置，但是在Common Lisp中，变量并非像在Java和c++等语言中那样带有确定的类型，也就是不需要为每一个变量声明其可以保存对象的类型，相反，一个变量可以保存任何类型的值，并且这些值带有可用于运行期类检查的类型信息。因此 Common Lisp是动态类型的——类型错误会被动态的检测到。</p>
+<p>比如，给+函数传递个字符串，Common Lisp就会报类型错误。而另一方面，Common Lisp是一种强类型语言，因为所有的类型错误都将被检测到——无法将一个对象作为其不属于的类型的实列来对待。</p>
+<p>至少从概念上来说，Common Lisp中所有值都是对象的引用，因此，将一个变量赋予新值就会改变变量所指向的对象，而对之前被引用的对象没有影响。（如果一个变量保存了对一个可变对象的引用，那么久可以用该引用来修改此对象，而这种改动将应用于任何带有相同对象引用的代码。）</p>
+<p>而另一种已经用到的引入新变量的方式是定义函数形参。在用DEFUN来定义函数时，形参列表定义了当函数被调用时用来保存实参的变量。列如，下列函数定义了三个变量x y和z，用来保存其实参:</p>
+<p><code>(defun foo (x y z) (+ x y z))</code></p>
+<p>每当函数被调用时，Lisp将会创建新的绑定来保存由函数调用者所传递的实参。绑定代表了变量在运行期的存在。单个变量就是可以在程序源代码中所指出的那种东西，在程序运行过程中可以有多个不同的绑定，单个变量甚至可以同时带有多重绑定。例如，一个递归函数的形参会在每一次函数调用中被重新绑定。</p>
+<p>和所有Common Lisp变量一样，函数形参也可以保存对象引用。因此，可以在函数体内为一个函数形参赋予新值，而这并不会影响到同样函数的另一个调用所创建的绑定。但如果改变了传递给函数的可变对象，则这些改动将会被调用者看到，因为无论调用者还是被调用者都在引用同一个对象。</p>
+<p>引入新变量的另一种方式是使用LET特殊操作符。下面就是一个LET形式的结构:</p>
+<pre><code><span class="list">(<span class="keyword"><span class="built_in">let</span></span> <span class="list">(<span class="keyword">variable*</span>)</span>
+    body-form*)</span>
+</code></pre><p>其中每一个variable都是一耳光变量初始化形式，每一个初始化形式要么是一个含有变量名和初值形式的列表，要么就是一个简单的变量名——作为将变量初始化到NIL得简略写法。列如，下面的LET形式会将三个变量x y z绑定到初始值10 20 和NIL上:</p>
+<p><code>(let ((x 10) (y 20) z)
+    ...)</code></p>
+<p>当这个LET形式被求值时，所有的初始值形式都将首先被求值，然后创建出新的绑定，并在形式体被执行之前这些绑定将初始化到适当的初始值上。在LET形式体中，变量名将引用新创建的绑定。在LET形式体执行结束后，这些变量名将重新引用在执行LET之前它们所引用的内容，如果有的话。</p>
+<p>形式体中最后一个表达式的值将作为LET表达式的值返回，和函数形参一眼，由LET所引入的变量将在每次进入LET时被重新绑定。</p>
+<p>函数形参和LET变量的作用域（变量名可用来引用该绑定的程序区域）被限定在引入该变量的形式之内，该形式即函数定义或LET，被称为绑定形式。很快将看到，词法变量和动态变量使用两种略有不同的作用域机制，但两者的作用域都被界定在绑定形式之内。</p>
+<p>如果嵌套了引入同名变量的绑定形式，那么最内层的变量绑定将<em>覆盖</em>外层的绑定。例如，在调用下面的函数时，将创建一个形参x的绑定来保存函数的实参。第一个LET创建了一个带有初始值2的新绑定，而内层的LET创建了另外一个绑定，其初始值为3。右边的竖线标记出了每一个绑定的作用域。</p>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">;;;;第二杭的x为实参，第四行为<span class="number">2</span> 第六行为<span class="number">3</span></span><br><span class="line"><span class="comment">(defun foo (x)</span></span><br><span class="line">	<span class="comment">(format t "Parameter: ~a~%" x)</span></span><br><span class="line">	<span class="comment">(let ((x 2)</span>)</span><br><span class="line">		<span class="comment">(format t "Outer LET: ~a~%" x)</span></span><br><span class="line">		<span class="comment">(let ((x 3)</span>)</span><br><span class="line">			<span class="comment">(format t "Inner LET: ~a~%" x)</span>))</span><br><span class="line">		<span class="comment">(format t "Outer LET: ~a~%" x)</span>)</span><br><span class="line">	<span class="comment">(foramt t "Parameter: ~a~%" x)</span>)</span><br></pre></td></tr></table></figure>
+<p>每一次对x的引用都将指向最小封闭作用域中的绑定。一旦程序控制离开了一个绑定形式的作用域，其最近的闭合作用域中的绑定就被解除覆盖，并且x将转而指向它。因此，调用foo将得到这样的输出:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CL-USER&gt; (foo <span class="number">1</span>)</span><br><span class="line">Parameter: <span class="number">1</span></span><br><span class="line">Outer LET: <span class="number">2</span></span><br><span class="line">Inner LET: <span class="number">3</span></span><br><span class="line">Outer LET: <span class="number">1</span></span><br><span class="line">NIL</span><br></pre></td></tr></table></figure>
+<p>后面学习其他可以作为绑定形式使用的程序构造，其特点在于所引入的新变量只能用于该构造。</p>
+<p><del>DOTIMES循环和LET*需要后面学习</del></p>
+<h1 id="词法变量和闭包">词法变量和闭包</h1><h1 id="动态变量">动态变量</h1><h1 id="常量">常量</h1><h1 id="赋值">赋值</h1><h1 id="广义赋值">广义赋值</h1><h1 id="其他修改位置的方式">其他修改位置的方式</h1><a id="more"></a>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/03/30/ruby/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          ruby
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/03/25/function/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">函数</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+<section id="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'ioschen'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 Whale Chen
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
