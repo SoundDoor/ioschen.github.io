@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>语法 | 忠良</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="括号里都有神马S-表达式s-表达式基本元素是列表和原子。列表由括号包围，并可包含任何数量的由空格所分隔的元素。
+空列表（）也可写成NIL既是原子也是列表
+数字的表示方法
+123  整数123
+3/7  比值七分之三
+1.0  默认精度的浮点数1
+1.0e0  同一个浮点数的另一个写法
+1.0d0  双精度的浮点数1
+1.0e-4  等价于万分之一的浮点数
++42  整数42
+-42  附属42
+-">
+<meta property="og:type" content="article">
+<meta property="og:title" content="语法">
+<meta property="og:url" content="http://ioschen.com/2014/03/23/yufa/index.html">
+<meta property="og:site_name" content="忠良">
+<meta property="og:description" content="括号里都有神马S-表达式s-表达式基本元素是列表和原子。列表由括号包围，并可包含任何数量的由空格所分隔的元素。
+空列表（）也可写成NIL既是原子也是列表
+数字的表示方法
+123  整数123
+3/7  比值七分之三
+1.0  默认精度的浮点数1
+1.0e0  同一个浮点数的另一个写法
+1.0d0  双精度的浮点数1
+1.0e-4  等价于万分之一的浮点数
++42  整数42
+-42  附属42
+-">
+<meta property="og:updated_time" content="2014-03-28T03:13:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="语法">
+<meta name="twitter:description" content="括号里都有神马S-表达式s-表达式基本元素是列表和原子。列表由括号包围，并可包含任何数量的由空格所分隔的元素。
+空列表（）也可写成NIL既是原子也是列表
+数字的表示方法
+123  整数123
+3/7  比值七分之三
+1.0  默认精度的浮点数1
+1.0e0  同一个浮点数的另一个写法
+1.0d0  双精度的浮点数1
+1.0e-4  等价于万分之一的浮点数
++42  整数42
+-42  附属42
+-">
+  
+    <link rel="alternative" href="/atom.xml" title="忠良" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="https://avatars2.githubusercontent.com/u/5210832?v=3&amp;s=460" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">忠良</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">得良哥一诺，如得黄金万两</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="/" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/APP/" style="font-size: 10px;">APP</a> <a href="/tags/Common-lisp/" style="font-size: 20px;">Common lisp</a> <a href="/tags/Mac软件/" style="font-size: 15px;">Mac软件</a> <a href="/tags/blog/" style="font-size: 15px;">blog</a> <a href="/tags/freebsd/" style="font-size: 10px;">freebsd</a> <a href="/tags/game/" style="font-size: 10px;">game</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/ios/" style="font-size: 15px;">ios</a> <a href="/tags/ruby/" style="font-size: 10px;">ruby</a> <a href="/tags/swift-ssid/" style="font-size: 10px;">swift ssid</a> <a href="/tags/人性/" style="font-size: 10px;">人性</a> <a href="/tags/技巧/" style="font-size: 10px;">技巧</a> <a href="/tags/灵感/" style="font-size: 10px;">灵感</a> <a href="/tags/资料分享/" style="font-size: 10px;">资料分享</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">忠良</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="https://avatars2.githubusercontent.com/u/5210832?v=3&amp;s=460" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">忠良</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">得良哥一诺，如得黄金万两</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="/" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-yufa" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/03/23/yufa/" class="article-date">
+  	<time datetime="2014-03-23T06:28:09.000Z" itemprop="datePublished">2014-03-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      语法
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Common-lisp/">Common lisp</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="括号里都有神马">括号里都有神马</h1><h1 id="S-表达式">S-表达式</h1><p>s-表达式基本元素是列表和原子。列表由括号包围，并可包含任何数量的由空格所分隔的元素。</p>
+<p>空列表（）也可写成NIL既是原子也是列表</p>
+<h2 id="数字的表示方法">数字的表示方法</h2><ol>
+<li>123  整数123</li>
+<li>3/7  比值七分之三</li>
+<li>1.0  默认精度的浮点数1</li>
+<li>1.0e0  同一个浮点数的另一个写法</li>
+<li>1.0d0  双精度的浮点数1</li>
+<li>1.0e-4  等价于万分之一的浮点数</li>
+<li>+42  整数42</li>
+<li>-42  附属42</li>
+<li>-1/4  比值负四分之一</li>
+<li>-2/8  负四分之一另一种写法</li>
+<li>246/2  123另一种写法</li>
+<li>lisp复数后面第十章开始解说</li>
+</ol>
+<p>-2/8和246/2等价于-1/4和123  1.0 等同于1.0e0   1.0、1.0d0 和1是不一样的，因为精度不同，代表的是不同类型的对象</p>
+<h2 id="字符串">字符串</h2><ol>
+<li>字符川由双引号包括，在字符串中，一个反斜杠会转义接下来的任意字符。</li>
+<li>两个在字符串中必须被转移的字符串是<code>双引号和反斜杠本身</code></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>字符串</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“foo”</td>
+<td>含有foo的字符串</td>
+</tr>
+<tr>
+<td>“fo\o”</td>
+<td>含有foo的字符串</td>
+</tr>
+<tr>
+<td>“fo\\o”</td>
+<td>含有fo\o的字符串</td>
+</tr>
+<tr>
+<td>“fo\”o”</td>
+<td>含有fo”和o的字符串</td>
+</tr>
+</tbody>
+</table>
+<pre><code>lisp中所使用的名字，诸如FORMAT  hello-world和<span class="keyword">*</span>db<span class="keyword">*</span>均由称为符号的对象所表示。空白字符不可以出现在列表里，只有一个句点的名字也不可以。这是个字符不能出现在名字里:开括号，闭括号，双引号和单引号，反引号，逗号，冒号，分号，反斜杠以及竖线。（加上反斜杠转义或者将有需要转义的字符串的字符名字用竖线包起来，还是可以使用的）
+</code></pre><p>读取器将把foo Foo和FOO都读成FOO，但\f\o\o 和 |foo|都被读成foo这是和符号FOO不同的另一个对象，这就是为什么REPL中定义一个函数时，它的名字会被打印成大写形式的原因。</p>
+<p>现在标准的编码风格是将代码全部写成小写形式，然后让读取器将名字转换为大写。</p>
+<p>为了保证同一个名字总是被读取成相同的符号，读取器保留这个符号，在已读取名字将其全部转化成大写形式后，读取器在一个称为包得表里查询带有相同名字的已有符号，如果没有找到，就创建一个新符号并添加到表里，否则返回已在表中的那个符号。<code>无论在任何地方，同意的名字出现在任何s-表达式里，都会用同一个对象去表示它</code></p>
+<blockquote>
+<p>全局变量名字开始和结尾处有*</p>
+<blockquote>
+<p>常量名开始结尾处有+</p>
+<blockquote>
+<p>有些程序员将特别低层的函数名前面加%或者%%</p>
+<blockquote>
+<p>语言标准所定义的名字只能使用字母字符表（A-Z）外加* + - / 1 2 &lt; = &gt; 以及&amp;这些符号</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="目前要求">目前要求</h2><p>只用列表，数字，字符串和符号就可以描述很大一部分的lisp程序呢其他的后面说<font color="red">目前关键是要理解怎样用数字，字符串和由符号借助括号所组成的列表式构建s-表达式，从而表示任意的树状对象。</font>下面是一些简单的列子。</p>
+<ol>
+<li>x                  符号x</li>
+<li>（）             空列表</li>
+<li>（1 2 3）         三个数字组成的列表</li>
+<li>（”foo” “bar”） 两个字符串组成的列表</li>
+<li>（x y z）         三个符号所组成的列表</li>
+<li>（x 1 “foo”）    一个符号，一个数字和一个字符串所组成的列表</li>
+<li>（+ （* 2 3）4）一个符号，一个列表，一个数字组成的列表</li>
+</ol>
+<p>下面这种四元素列表就稍显复杂了，它含有两个符号，空列表以及另一个列表-其本身又含有两个符号和一个字符串:<br>    <figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">defun</span> hello-world <span class="list">()</span> <span class="list">(<span class="keyword"><span class="built_in">format</span></span> t <span class="string">"hello, world"</span>)</span>)</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="作为Lisp形式的S-表达式">作为Lisp形式的S-表达式</h1><ol>
+<li><p>读取器把大量文本转化为s-表达式后，这些s-表达式随后可以作为lisp形式被求值。（有些没必要求值）<br>任何一个原子（非列表或空列表）都是一个合法的Lisp形式</p>
+</li>
+<li><p>作为最简单的lisp形式，原子可以被分成两个类别：符号和所有其他内容。符号在作为lisp形式被求值时会被视为一个变量名，并且会被求值为该变量的当前值。</p>
+</li>
+<li><p>所有其他的原子，包括数字和字符串都是自求值对象。<br>比如输入10和helloworld</p>
+</li>
+<li><p>把符号变成自求值对象也是可能的，它所命名的变量可以被赋值成符号本身的值。两个以这种方式定义的常量是T和NIL，既所谓的真值和假值</p>
+</li>
+<li>另一类自求值符号是<code>关键字</code>符号-以名字冒号开始的符号。当读取器保留这样一个名字时，它会自动定义一个以此命名的常值变量并以该符号作为其值。</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">当我们开始考虑列表的求值方式时候，事情变得更加有趣了，所有合法的列表形式均以一个符号开始，但是有三种类型的列表形式，他们会以三种相当不同的方式进行求值，为了确定一个给定的列表式哪种形式，求值器必须检测列表开始处的那个符号是一个函数，宏还是特殊操作符的名字。如果该符号尚未定义，比如说当你正在编译一段含有对尚未定义函数的引用代码时，它会被假设成一个函数的名字。我将把这三种类型的形式称为函数调用形式，宏形式和特殊形式。</span><br></pre></td></tr></table></figure>
+<p>common lisp中一个符号可以同时为操作符（函数，宏或特殊操作符）和变量命名</p>
+<h1 id="函数调用">函数调用</h1><p>函数调用形式的求值规则很简单，对以lisp形式存在的列表其余元素进行求值并将结果传递到命名函数中，这一规则明显有着附加的句法限制在函数调用形式上:除第一个以外，所有的列表元素他们自身必须是一个形态良好的lisp形式，换句话说，函数调用形式的基本语法应如下所示，其中每个参数本身也是lisp形式:<br>（function-name argument*）</p>
+<ol>
+<li>(+ 1 2)首先求值1，再求值2然后将得到的值传给+函数再返回3</li>
+<li>（<em> （+ 1 2）（- 3 4））先求参数的值为3和-1最后传递到</em>函数里，从而得到-3</li>
+</ol>
+<h1 id="特殊操作符">特殊操作符</h1><p>并非所有操作都可以定义成函数，由于一个函数的所有参数在函数调用之前都将被求值，因此无法写出一个累世IF操作符那样的函数</p>
+<p>当列表的第一个元素是一个由特殊操作符所命名的符号时，表达式的其余部分将按照该操作符的规则进行求值。</p>
+<h2 id="IF操作符">IF操作符</h2><font color="red">IF的规则相当简单:求值第一个表达式。如果得到非NIL，那么求值下一个表达式并返回它的值，否则，返回第三个表达式的求值，或者如果第三个表达式被省略的话，返回NIL。换句话说，一个IF表达式的基本形式是像下面这样:</font>
+
+<p>(if test-form then-form [else-form])</p>
+<p>其中test-form将总是被求值 ，然后要么是then-form要么是else-form</p>
+<h2 id="QUOTE操作符">QUOTE操作符</h2><p>一个更简单的操作符是QUOTE，它接受一个单一表达式作为其“参数”并简单的返回他，不经求值，列如，下面的表达式求值得到列表（+ 1 2），而不是值3:</p>
+<p><code>(quote (+ 1 2))</code></p>
+<p>QUOTE用得非常普遍，以至于读取器内置一个它的特别语法形式，还可以写成 ‘(+ 1 2) <del>该语法是读取器所理解的s-表达式语法的小扩展</del></p>
+<p>一般来说，特殊操作符所实现的语言特性需要求职器操作出某些特殊处理。列如，有些的操作符修改了其他形式的求值环境，其中之一是LET，下面会详细解说，它用来创建新的变量绑定。下面的形式求值得到10，因为在第二个x的求值环境中，它是由LET赋值为10的变量名:</p>
+<pre><code><span class="list">(<span class="keyword"><span class="built_in">let</span></span> <span class="list">(<span class="list">(<span class="keyword">x</span> <span class="number">10</span>)</span>)</span> x)</span>
+</code></pre><h1 id="宏">宏</h1><p>由于特殊操作符数量在标准语言中是固定的，然而宏却能提供给语言用户另一种语法扩展方式。宏是以一个s-表达式为其参数的函数，并返回一个lisp形式，然后对其求值并用该值取代宏形式。宏形式的求值过程包括两个阶段：<font color="red">首先，宏形式的袁术不经常求值既被传递到宏函数里，其次，由宏函数所返回的形式（展开式）按照正常的求值规则进行求值。</font></p>
+<p>。。。</p>
+<h1 id="真_假和等价">真 假和等价</h1><h2 id="真假">真假</h2><ol>
+<li>符号NIL式唯一的假值，其他所有都是真值</li>
+<li>符号T式标准的真值，可用于需要返回一个非    NIL值却又没有其他值可用的情况。</li>
+<li>关于NIL唯一一个麻烦的一点是，它是唯一一个即是原子又是列表的对象：除了用来表示假以外，它还用来表示空列表。</li>
+<li>nil （） ‘nil和’（）这四个求值结果一样的</li>
+<li>t和‘t求值结果也完全相同：符号T</li>
+</ol>
+<h2 id="等价">等价</h2><ul>
+<li>=用来比较数字</li>
+<li>CHAR=用来比较字符</li>
+</ul>
+<p>等价时返回真，否则假</p>
+<ol>
+<li>EQ  只有两个对象相同时才是eq等价的（最好不是数字字符的比较时候用）</li>
+<li>EQL  （eql 1 1）真    （eql 1 1.0）假</li>
+<li>EQUAL 将在递归上具有相同结构和内容的表现视为等价，也认为含有相同字符的字符串是等价的，它对于位向量和路径名也定义了比eql更加宽松的等价性  </li>
+<li>EQUALP  和equal相似，但是比较字符串忽略大小写区别，字母相同就是等价，只要数字表示相同数学意义上的值，他们在equalp下面就是等价的，因此（equalp 1 1.0）是真的。由equalp等价的元素组成的列表也是equalp等价的。同样的，带有equalp元素的数组也是equalp等价的，和equal一样，还有一些其他暂时没讲到的数据类型，equalp可认为两个对象是等价的，但是eql和equal则不会，对于所有其他数据类型，equalp会退到eql水平上。</li>
+</ol>
+<h1 id="格式化Lisp代码">格式化Lisp代码</h1><h2 id="代码缩进">代码缩进</h2><p>格式化代码关键在于正确缩进它，这一缩进应当反映出代码结构，这样就不用数括号了。一般而言，每一个新的嵌套层次都需要多缩进一点儿，并且如果折行是必须的，位于同一个嵌套层次的项应当按行对齐。<br>这样，一个需要跨越多行的函数调用可能就会被写成这样：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">（<span class="keyword">some</span>-function arg-<span class="keyword">with</span>-a-long-<span class="property">name</span></span><br><span class="line">				 another-arg-<span class="keyword">with</span>-an-even-longer-					 <span class="property">name</span>）</span><br></pre></td></tr></table></figure>
+<p>那些实现控制结构的宏和特殊形式在缩进上稍有不同：“主体”元素相对于整个形式的开括号缩进两个空格。就像这样</p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">（defun <span class="keyword">print</span>-<span class="keyword">list</span> （<span class="keyword">list</span>）</span><br><span class="line">	(dolist (i <span class="keyword">list</span>)</span><br><span class="line">		(<span class="keyword">format</span> t <span class="string">"item: ~a~%"</span> i))）</span><br></pre></td></tr></table></figure>
+<h2 id="注释">注释</h2><p><code>;;;;</code>   四个分号用于文件头注释</p>
+<p><code>;;;</code>    带有三个分号的注释将通常作为段落注释应用到接下来的一大段代码上</p>
+<p><code>;;</code>     两个分号说明该注释应用于接下来的代码上。注意，该注释与其所应用的代码具有相同的缩进</p>
+<pre><code> ;;;这就是一大堆代码
+（defun foo （x）
+    （dotime （<span class="built_in">i</span> x）
+         ;;这就是两个注释
+        （some-<span class="function"><span class="keyword">function</span>-<span class="title">call</span>）</span>
+        （another <span class="built_in">i</span>）
+        （add-another）
+        （baz）））
+</code></pre><p>!–more–&gt;</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/03/25/function/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          函数
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/03/21/iphonesize/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">iphoneSize</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+<section id="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'ioschen'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 忠良
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
