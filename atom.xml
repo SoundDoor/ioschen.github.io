@@ -300,6 +300,60 @@
   </entry>
   
   <entry>
+    <title><![CDATA[宏:标准控制结构]]></title>
+    <link href="http://ioschen.com/2014/04/01/ifelseand/"/>
+    <id>http://ioschen.com/2014/04/01/ifelseand/</id>
+    <published>2014-04-01T01:32:28.000Z</published>
+    <updated>2015-11-02T08:51:24.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="引导">引导</h1><p>lisp和其他语言一样，有条件表达式，垃圾收集，但是lisp的宏系统却始终使他保持了在语言风格上的独特性。lisp的宏和任何语言的“宏”是不一样的。这个东西很难解释。</p>
+<p>语言都有一个“核心”语言实现的标准功能库（java的JDK），如果某些功能没有定义在标准库中，可以自己实现。（求平凡实现列子）</p>
+<p>。。。。。。</p>
+<h1 id="WHEN和UNLESS">WHEN和UNLESS</h1><p>最基本的条件执行形式是IF特殊操作符，其基本形式是:如果x成立，那么执行y，否则执行z。</p>
+<p><code>(if condition then-form [else-form])</code></p>
+<p>condition被求值，如果其值非NIL，那么then-form会被求值并返回其结果。否则，如果有else-form，他将被求值并返回其结果。如果condition是NIL并且没有else-form，那么IF返回NIL。（<font color="red">condition是判断条件，如果为nil就返回then-form的值，否则要是有else-form就返回else-form的值。如果只有condition并且值是nil就返回nil</font>）</p>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CL-USER&gt; <span class="list">(<span class="keyword">if</span> <span class="list">(<span class="keyword">&gt;</span> <span class="number">2</span> <span class="number">3</span>)</span> <span class="string">"YES"</span> <span class="string">"no"</span>)</span></span><br><span class="line"><span class="string">"no"</span></span><br><span class="line">CL-USER&gt; <span class="list">(<span class="keyword">if</span> <span class="list">(<span class="keyword">&gt;</span> <span class="number">2</span> <span class="number">3</span>)</span> <span class="string">"yes"</span>)</span></span><br><span class="line">NIL</span><br><span class="line">CL-USER&gt; <span class="list">(<span class="keyword">if</span> <span class="list">(<span class="keyword">&gt;</span> <span class="number">3</span> <span class="number">2</span>)</span><span class="string">"yes"</span> <span class="string">"no"</span>)</span></span><br><span class="line"><span class="string">"yes"</span></span><br></pre></td></tr></table></figure>
+<p>有一个情况不行，当条件成立，连续执行两个就不可以，因为会被当成else执行。要想在条件语句执行多个就必须使用progn特殊操作符。</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">if</span></span> <span class="list">(<span class="keyword">a</span>)</span></span><br><span class="line">	<span class="list">(<span class="keyword">progn</span></span><br><span class="line"> 		<span class="list">(<span class="keyword"><span class="built_in">into</span></span>)</span></span><br><span class="line"> 		<span class="list">(<span class="keyword">update</span>)</span>)</span>)</span></span><br></pre></td></tr></table></figure>
+<p>如上面，这样才会在a成立的时候执行into再执行update。</p>
+<p>其lisp提供了一个标准宏WHEN 就是解决这个问题的。上面的可以写成这个样子</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">when</span></span> <span class="list">(<span class="keyword">a</span>)</span></span><br><span class="line">	<span class="list">(<span class="keyword"><span class="built_in">into</span></span>)</span></span><br><span class="line">	<span class="list">(<span class="keyword">update</span>)</span>)</span></span><br></pre></td></tr></table></figure>
+<p>如果它没有被内置到标准库中，你也可以像下面这样用一个宏来定义WHEN<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">defnacro</span> when <span class="list">(<span class="keyword">condition</span> &amp;rest body)</span></span><br><span class="line">	`<span class="list">(<span class="keyword"><span class="built_in">if</span></span> ,condition <span class="list">(<span class="keyword">progn</span> ,@body)</span>)</span>)</span></span><br></pre></td></tr></table></figure></p>
+<p>与WHEN宏同系列的另一个宏是UNLESS 它取相反条件，只有条件假的时候才求值其形式体。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">defnacro</span> when <span class="list">(<span class="keyword">condition</span> &amp;rest body)</span></span><br><span class="line">	`<span class="list">(<span class="keyword"><span class="built_in">if</span></span> <span class="list">(<span class="keyword"><span class="built_in">not</span></span> ,condition)</span> <span class="list">(<span class="keyword">progn</span> ,@body)</span>)</span>)</span></span><br></pre></td></tr></table></figure></p>
+<p><del>其实上面的定义不对，因为重新定义when所在的common-lisp包中的名字是非法的，如果非要这么做，可以修改名字，比如my-when</del></p>
+<h1 id="COND">COND</h1><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">if</span></span> a</span><br><span class="line">	<span class="list">(<span class="keyword">do-x</span>)</span></span><br><span class="line">	<span class="list">(<span class="keyword"><span class="built_in">if</span></span> b</span><br><span class="line">		<span class="list">(<span class="keyword">do-y</span>)</span></span><br><span class="line">		<span class="list">(<span class="keyword">do-z</span>)</span>)</span>)</span></span><br></pre></td></tr></table></figure>
+<p>多重分支用if是可以，但是比较丑陋</p>
+<p>如果子句再分很多就更丑了，但是lisp提供了一个<code>用于表达多重分支条件的宏COND</code>基本结构如下</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">cond</span></span></span><br><span class="line">	<span class="list">(<span class="keyword">test-1</span> form*)</span></span><br><span class="line">	<span class="list">(<span class="keyword">test-2</span> form*)</span></span><br><span class="line">	   .</span><br><span class="line">	   .</span><br><span class="line">	   .</span><br><span class="line">	<span class="list">(<span class="keyword">test-N</span> form*)</span>)</span></span><br></pre></td></tr></table></figure>
+<h1 id="AND、OR和NOT">AND、OR和NOT</h1><h1 id="循环">循环</h1><h1 id="DOLIST和DOTIMES">DOLIST和DOTIMES</h1><h1 id="DO">DO</h1><h1 id="强大的LOOP">强大的LOOP</h1><a id="more"></a>]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="引导">引导</h1><p>lisp和其他语言一样，有条件表达式，垃圾收集，但是lisp的宏系统却始终使他保持了在语言风格上的独特性。lisp的宏和任何语言的“宏”是不一样的。这个东西很难解释。</p>
+<p>语言都有一个“核心”语言实现的标准功能库（java的JDK），如果某些功能没有定义在标准库中，可以自己实现。（求平凡实现列子）</p>
+<p>。。。。。。</p>
+<h1 id="WHEN和UNLESS">WHEN和UNLESS</h1><p>最基本的条件执行形式是IF特殊操作符，其基本形式是:如果x成立，那么执行y，否则执行z。</p>
+<p><code>(if condition then-form [else-form])</code></p>
+<p>condition被求值，如果其值非NIL，那么then-form会被求值并返回其结果。否则，如果有else-form，他将被求值并返回其结果。如果condition是NIL并且没有else-form，那么IF返回NIL。（<font color=red>condition是判断条件，如果为nil就返回then-form的值，否则要是有else-form就返回else-form的值。如果只有condition并且值是nil就返回nil</font>）</p>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CL-USER&gt; <span class="list">(<span class="keyword">if</span> <span class="list">(<span class="keyword">&gt;</span> <span class="number">2</span> <span class="number">3</span>)</span> <span class="string">"YES"</span> <span class="string">"no"</span>)</span></span><br><span class="line"><span class="string">"no"</span></span><br><span class="line">CL-USER&gt; <span class="list">(<span class="keyword">if</span> <span class="list">(<span class="keyword">&gt;</span> <span class="number">2</span> <span class="number">3</span>)</span> <span class="string">"yes"</span>)</span></span><br><span class="line">NIL</span><br><span class="line">CL-USER&gt; <span class="list">(<span class="keyword">if</span> <span class="list">(<span class="keyword">&gt;</span> <span class="number">3</span> <span class="number">2</span>)</span><span class="string">"yes"</span> <span class="string">"no"</span>)</span></span><br><span class="line"><span class="string">"yes"</span></span><br></pre></td></tr></table></figure>
+<p>有一个情况不行，当条件成立，连续执行两个就不可以，因为会被当成else执行。要想在条件语句执行多个就必须使用progn特殊操作符。</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">if</span></span> <span class="list">(<span class="keyword">a</span>)</span></span><br><span class="line">	<span class="list">(<span class="keyword">progn</span></span><br><span class="line"> 		<span class="list">(<span class="keyword"><span class="built_in">into</span></span>)</span></span><br><span class="line"> 		<span class="list">(<span class="keyword">update</span>)</span>)</span>)</span></span><br></pre></td></tr></table></figure>
+<p>如上面，这样才会在a成立的时候执行into再执行update。</p>
+<p>其lisp提供了一个标准宏WHEN 就是解决这个问题的。上面的可以写成这个样子</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">when</span></span> <span class="list">(<span class="keyword">a</span>)</span></span><br><span class="line">	<span class="list">(<span class="keyword"><span class="built_in">into</span></span>)</span></span><br><span class="line">	<span class="list">(<span class="keyword">update</span>)</span>)</span></span><br></pre></td></tr></table></figure>
+<p>如果它没有被内置到标准库中，你也可以像下面这样用一个宏来定义WHEN<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">defnacro</span> when <span class="list">(<span class="keyword">condition</span> &amp;rest body)</span></span><br><span class="line">	`<span class="list">(<span class="keyword"><span class="built_in">if</span></span> ,condition <span class="list">(<span class="keyword">progn</span> ,@body)</span>)</span>)</span></span><br></pre></td></tr></table></figure></p>
+<p>与WHEN宏同系列的另一个宏是UNLESS 它取相反条件，只有条件假的时候才求值其形式体。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">defnacro</span> when <span class="list">(<span class="keyword">condition</span> &amp;rest body)</span></span><br><span class="line">	`<span class="list">(<span class="keyword"><span class="built_in">if</span></span> <span class="list">(<span class="keyword"><span class="built_in">not</span></span> ,condition)</span> <span class="list">(<span class="keyword">progn</span> ,@body)</span>)</span>)</span></span><br></pre></td></tr></table></figure></p>
+<p><del>其实上面的定义不对，因为重新定义when所在的common-lisp包中的名字是非法的，如果非要这么做，可以修改名字，比如my-when</del></p>
+<h1 id="COND">COND</h1><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">if</span></span> a</span><br><span class="line">	<span class="list">(<span class="keyword">do-x</span>)</span></span><br><span class="line">	<span class="list">(<span class="keyword"><span class="built_in">if</span></span> b</span><br><span class="line">		<span class="list">(<span class="keyword">do-y</span>)</span></span><br><span class="line">		<span class="list">(<span class="keyword">do-z</span>)</span>)</span>)</span></span><br></pre></td></tr></table></figure>
+<p>多重分支用if是可以，但是比较丑陋</p>
+<p>如果子句再分很多就更丑了，但是lisp提供了一个<code>用于表达多重分支条件的宏COND</code>基本结构如下</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">cond</span></span></span><br><span class="line">	<span class="list">(<span class="keyword">test-1</span> form*)</span></span><br><span class="line">	<span class="list">(<span class="keyword">test-2</span> form*)</span></span><br><span class="line">	   .</span><br><span class="line">	   .</span><br><span class="line">	   .</span><br><span class="line">	<span class="list">(<span class="keyword">test-N</span> form*)</span>)</span></span><br></pre></td></tr></table></figure>
+<h1 id="AND、OR和NOT">AND、OR和NOT</h1><h1 id="循环">循环</h1><h1 id="DOLIST和DOTIMES">DOLIST和DOTIMES</h1><h1 id="DO">DO</h1><h1 id="强大的LOOP">强大的LOOP</h1>]]>
+    
+    </summary>
+    
+      <category term="Common lisp" scheme="http://ioschen.com/tags/Common-lisp/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[freebook]]></title>
     <link href="http://ioschen.com/2014/03/30/freebook/"/>
     <id>http://ioschen.com/2014/03/30/freebook/</id>
@@ -315,7 +369,7 @@
 <h2 id="参与交流">参与交流</h2><p>欢迎大家讲珍藏已久的经典免费书籍共享出来，您可以：</p>
 <ul>
 <li>使用 <a href="https://github.com/justjavac/free-programming-books-zh_CN/issues" target="_blank" rel="external">Issues</a> 以及 Pull Request </li>
-<li>发邮箱给我 <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x6a;&#117;&#x73;&#x74;&#x6a;&#97;&#x76;&#x61;&#99;&#43;&#x67;&#x68;&#x62;&#111;&#x6f;&#x6b;&#x73;&#64;&#x67;&#109;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#x6a;&#117;&#x73;&#x74;&#x6a;&#97;&#x76;&#x61;&#99;&#43;&#x67;&#x68;&#x62;&#111;&#x6f;&#x6b;&#x73;&#64;&#x67;&#109;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;</a></li>
+<li>发邮箱给我 <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#58;&#106;&#x75;&#x73;&#x74;&#106;&#x61;&#118;&#x61;&#x63;&#x2b;&#103;&#104;&#x62;&#111;&#111;&#107;&#115;&#x40;&#103;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#106;&#x75;&#x73;&#x74;&#106;&#x61;&#118;&#x61;&#x63;&#x2b;&#103;&#104;&#x62;&#111;&#111;&#107;&#115;&#x40;&#103;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a></li>
 <li>来 <a href="http://segmentfault.com/q/1010000000329895" target="_blank" rel="external">SegmentFault</a> 交流</li>
 </ul>
 <p><strong>注</strong>：看到有人 fork 此 repository，其实如果觉得有帮助，可以 star 或者 watch，<br>如果 fork 到你的 repositories 下则不能保证你的 repo 是最新的，除非是主动定期的 pull。</p>
@@ -558,7 +612,7 @@
 <h2 id="参与交流">参与交流</h2><p>欢迎大家讲珍藏已久的经典免费书籍共享出来，您可以：</p>
 <ul>
 <li>使用 <a href="https://github.com/justjavac/free-programming-books-zh_CN/issues">Issues</a> 以及 Pull Request </li>
-<li>发邮箱给我 <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x6a;&#117;&#x73;&#x74;&#x6a;&#97;&#x76;&#x61;&#99;&#43;&#x67;&#x68;&#x62;&#111;&#x6f;&#x6b;&#x73;&#64;&#x67;&#109;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#x6a;&#117;&#x73;&#x74;&#x6a;&#97;&#x76;&#x61;&#99;&#43;&#x67;&#x68;&#x62;&#111;&#x6f;&#x6b;&#x73;&#64;&#x67;&#109;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;</a></li>
+<li>发邮箱给我 <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#58;&#106;&#x75;&#x73;&#x74;&#106;&#x61;&#118;&#x61;&#x63;&#x2b;&#103;&#104;&#x62;&#111;&#111;&#107;&#115;&#x40;&#103;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#106;&#x75;&#x73;&#x74;&#106;&#x61;&#118;&#x61;&#x63;&#x2b;&#103;&#104;&#x62;&#111;&#111;&#107;&#115;&#x40;&#103;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a></li>
 <li>来 <a href="http://segmentfault.com/q/1010000000329895">SegmentFault</a> 交流</li>
 </ul>
 <p><strong>注</strong>：看到有人 fork 此 repository，其实如果觉得有帮助，可以 star 或者 watch，<br>如果 fork 到你的 repositories 下则不能保证你的 repo 是最新的，除非是主动定期的 pull。</p>
@@ -1794,35 +1848,6 @@ NIL
     </summary>
     
       <category term="game" scheme="http://ioschen.com/tags/game/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[writer]]></title>
-    <link href="http://ioschen.com/2014/01/19/writer/"/>
-    <id>http://ioschen.com/2014/01/19/writer/</id>
-    <published>2014-01-19T01:35:02.000Z</published>
-    <updated>2014-01-19T09:00:57.000Z</updated>
-    <content type="html"><![CDATA[<p>#HTML设置属性,配合Markdown</p>
-<p>##字体大小和色彩等<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">font</span> <span class="attribute">size</span>=<span class="value">20</span> <span class="attribute">color</span>=<span class="value">red</span>&gt;</span>文字四大行<span class="tag">&lt;/<span class="title">font</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<font size="20" color="red">文字四大行</font>
-
-<p>##字体背景色和空格<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">##<span class="title">&lt;span style="background-color: #ff6600;"&gt;</span>你的文字<span class="title">&lt;/span&gt;</span></span></span><br><span class="line"> 前面加<span class="preprocessor">#等markdown语法也可以用</span></span><br><span class="line"> &amp;nbsp;是空格</span><br><span class="line"> 下面这个做排版的标题很好,颜色自己选择</span><br><span class="line"> <span class="preprocessor">##<span class="title">&lt;span style="background-color: #ff6600;"&gt;</span>你的文字&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<span class="title">&lt;/span&gt;</span></span></span><br></pre></td></tr></table></figure></p>
-<p>##<span style="background-color: #ff6600;">你的文字&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p>##添加音频</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">embed</span> <span class="attribute">src</span>=<span class="value">"http://www.xiami.com/widget/0_3515679/singlePlayer.swf"</span> <span class="attribute">type</span>=<span class="value">"application/x-shockwave-flash"</span> <span class="attribute">width</span>=<span class="value">"257"</span> <span class="attribute">height</span>=<span class="value">"33"</span> <span class="attribute">wmode</span>=<span class="value">"transparent"</span>&gt;</span><span class="tag">&lt;/<span class="title">embed</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<embed src="http://www.xiami.com/widget/0_3515679/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent">
-
-
-<p>##添加视频<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">iframe</span> <span class="attribute">height</span>=<span class="value">498</span> <span class="attribute">width</span>=<span class="value">510</span> <span class="attribute">src</span>=<span class="value">"http://player.youku.com/embed/XMjI2MjU3MDMy"</span>  <span class="attribute">frameborder</span>=<span class="value">0</span> <span class="attribute">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="title">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<iframe height="498" width="510" src="http://player.youku.com/embed/XMjI2MjU3MDMy" frameborder="0" allowfullscreen></iframe>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>#HTML设置属性,配合Markdown</p>
-<p>##字体大小和色彩等<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br]]>
-    </summary>
-    
-      <category term="hexo" scheme="http://ioschen.com/tags/hexo/"/>
     
   </entry>
   
