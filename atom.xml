@@ -3,9 +3,9 @@
   <title><![CDATA[忠良]]></title>
   <subtitle><![CDATA[得良哥一诺，如得黄金万两]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://ioschen.com/"/>
+  <link href="https://ioschen.com/"/>
   <updated>2016-03-22T03:02:07.000Z</updated>
-  <id>http://ioschen.com/</id>
+  <id>https://ioschen.com/</id>
   
   <author>
     <name><![CDATA[忠良]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[Swift小知识总结]]></title>
-    <link href="http://ioschen.com/2016/03/22/swiftFun/"/>
-    <id>http://ioschen.com/2016/03/22/swiftFun/</id>
+    <link href="https://ioschen.com/2016/03/22/swiftFun/"/>
+    <id>https://ioschen.com/2016/03/22/swiftFun/</id>
     <published>2016-03-22T03:02:02.000Z</published>
     <updated>2016-03-22T03:02:07.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -27,14 +27,14 @@
 ]]>
     </summary>
     
-      <category term="swift" scheme="http://ioschen.com/tags/swift/"/>
+      <category term="swift" scheme="https://ioschen.com/tags/swift/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Swift获取WIFI的SSID 和Swift获取IP]]></title>
-    <link href="http://ioschen.com/2015/08/17/swiftssid/"/>
-    <id>http://ioschen.com/2015/08/17/swiftssid/</id>
+    <link href="https://ioschen.com/2015/08/17/swiftssid/"/>
+    <id>https://ioschen.com/2015/08/17/swiftssid/</id>
     <published>2015-08-17T07:42:45.000Z</published>
     <updated>2015-11-03T16:23:44.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://ioschen.com/images/emacs.png" alt="emacs"></p>
@@ -47,14 +47,14 @@
     
     </summary>
     
-      <category term="swift ssid" scheme="http://ioschen.com/tags/swift-ssid/"/>
+      <category term="swift ssid" scheme="https://ioschen.com/tags/swift-ssid/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Mac开发NSButton学习笔记]]></title>
-    <link href="http://ioschen.com/2015/01/07/studyui/"/>
-    <id>http://ioschen.com/2015/01/07/studyui/</id>
+    <link href="https://ioschen.com/2015/01/07/studyui/"/>
+    <id>https://ioschen.com/2015/01/07/studyui/</id>
     <published>2015-01-07T13:36:10.000Z</published>
     <updated>2015-03-30T07:31:51.000Z</updated>
     <content type="html"><![CDATA[<h3 id="新建项目StudyUI">新建项目StudyUI</h3><ol>
@@ -72,14 +72,14 @@
 <li>设置如下图<br><img sr]]>
     </summary>
     
-      <category term="Mac软件" scheme="http://ioschen.com/tags/Mac%E8%BD%AF%E4%BB%B6/"/>
+      <category term="Mac软件" scheme="https://ioschen.com/tags/Mac%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[我的Mac定制软件]]></title>
-    <link href="http://ioschen.com/2015/01/07/cly/"/>
-    <id>http://ioschen.com/2015/01/07/cly/</id>
+    <link href="https://ioschen.com/2015/01/07/cly/"/>
+    <id>https://ioschen.com/2015/01/07/cly/</id>
     <published>2015-01-07T13:36:10.000Z</published>
     <updated>2015-03-30T07:21:00.000Z</updated>
     <content type="html"><![CDATA[<h3 id="项目简介">项目简介</h3><p>新建项目CLY</p>
@@ -121,14 +121,14 @@
     
     </summary>
     
-      <category term="Mac软件" scheme="http://ioschen.com/tags/Mac%E8%BD%AF%E4%BB%B6/"/>
+      <category term="Mac软件" scheme="https://ioschen.com/tags/Mac%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BestApp]]></title>
-    <link href="http://ioschen.com/2014/12/10/bestapp/"/>
-    <id>http://ioschen.com/2014/12/10/bestapp/</id>
+    <link href="https://ioschen.com/2014/12/10/bestapp/"/>
+    <id>https://ioschen.com/2014/12/10/bestapp/</id>
     <published>2014-12-10T03:14:23.000Z</published>
     <updated>2015-11-02T08:36:13.000Z</updated>
     <content type="html"><![CDATA[<h2 id="必备软件">必备软件</h2><ol>
@@ -151,18 +151,18 @@
     
     </summary>
     
-      <category term="APP" scheme="http://ioschen.com/tags/APP/"/>
+      <category term="APP" scheme="https://ioschen.com/tags/APP/"/>
     
-      <category term="技巧" scheme="http://ioschen.com/tags/%E6%8A%80%E5%B7%A7/"/>
+      <category term="技巧" scheme="https://ioschen.com/tags/%E6%8A%80%E5%B7%A7/"/>
     
-      <category term="default" scheme="http://ioschen.com/categories/default/"/>
+      <category term="default" scheme="https://ioschen.com/categories/default/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[one]]></title>
-    <link href="http://ioschen.com/2014/08/31/one/"/>
-    <id>http://ioschen.com/2014/08/31/one/</id>
+    <link href="https://ioschen.com/2014/08/31/one/"/>
+    <id>https://ioschen.com/2014/08/31/one/</id>
     <published>2014-08-30T16:06:09.000Z</published>
     <updated>2014-08-30T16:12:00.000Z</updated>
     <content type="html"><![CDATA[<p>刚刚灵光一闪，想到一个绝佳创意。建立一个网站叫做壹元购，每天推一到两款产品，比如iPhone5s手机5000元。只要超过5230个人购买就生效，否则参与的一元钱退还。超过的话就抽奖，抽中的人得到。为了公平起见，抽中的人根据当天的彩票号码或者其他号码进行算法处理，保证只能一个人中奖。</p>
@@ -173,14 +173,14 @@
     
     </summary>
     
-      <category term="灵感" scheme="http://ioschen.com/tags/%E7%81%B5%E6%84%9F/"/>
+      <category term="灵感" scheme="https://ioschen.com/tags/%E7%81%B5%E6%84%9F/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[bug]]></title>
-    <link href="http://ioschen.com/2014/06/21/bug/"/>
-    <id>http://ioschen.com/2014/06/21/bug/</id>
+    <link href="https://ioschen.com/2014/06/21/bug/"/>
+    <id>https://ioschen.com/2014/06/21/bug/</id>
     <published>2014-06-21T14:05:04.000Z</published>
     <updated>2014-06-21T14:08:28.000Z</updated>
     <content type="html"><![CDATA[<p>今天出现一个问题</p>
@@ -194,14 +194,14 @@
     
     </summary>
     
-      <category term="ios" scheme="http://ioschen.com/tags/ios/"/>
+      <category term="ios" scheme="https://ioschen.com/tags/ios/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[freebsd 10.0安装]]></title>
-    <link href="http://ioschen.com/2014/04/05/freebsd/"/>
-    <id>http://ioschen.com/2014/04/05/freebsd/</id>
+    <link href="https://ioschen.com/2014/04/05/freebsd/"/>
+    <id>https://ioschen.com/2014/04/05/freebsd/</id>
     <published>2014-04-05T11:20:06.000Z</published>
     <updated>2014-04-05T12:36:58.000Z</updated>
     <content type="html"><![CDATA[<h1 id="理由">理由</h1><h1 id="下载">下载</h1><p><a href="http://ftp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/10.0/" target="_blank" rel="external">下载地址</a></p>
@@ -241,14 +241,14 @@
     
     </summary>
     
-      <category term="freebsd" scheme="http://ioschen.com/tags/freebsd/"/>
+      <category term="freebsd" scheme="https://ioschen.com/tags/freebsd/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[怎样才能改变一个人]]></title>
-    <link href="http://ioschen.com/2014/04/03/jing/"/>
-    <id>http://ioschen.com/2014/04/03/jing/</id>
+    <link href="https://ioschen.com/2014/04/03/jing/"/>
+    <id>https://ioschen.com/2014/04/03/jing/</id>
     <published>2014-04-03T13:04:05.000Z</published>
     <updated>2015-11-02T08:17:12.000Z</updated>
     <content type="html"><![CDATA[<h1 id="怎样才能改变一个人">怎样才能改变一个人</h1><ul>
@@ -286,14 +286,14 @@
     
     </summary>
     
-      <category term="人性" scheme="http://ioschen.com/tags/%E4%BA%BA%E6%80%A7/"/>
+      <category term="人性" scheme="https://ioschen.com/tags/%E4%BA%BA%E6%80%A7/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[宏:标准控制结构]]></title>
-    <link href="http://ioschen.com/2014/04/01/ifelseand/"/>
-    <id>http://ioschen.com/2014/04/01/ifelseand/</id>
+    <link href="https://ioschen.com/2014/04/01/ifelseand/"/>
+    <id>https://ioschen.com/2014/04/01/ifelseand/</id>
     <published>2014-04-01T01:32:28.000Z</published>
     <updated>2015-11-02T08:51:24.000Z</updated>
     <content type="html"><![CDATA[<h1 id="引导">引导</h1><p>lisp和其他语言一样，有条件表达式，垃圾收集，但是lisp的宏系统却始终使他保持了在语言风格上的独特性。lisp的宏和任何语言的“宏”是不一样的。这个东西很难解释。</p>
@@ -340,14 +340,14 @@
     
     </summary>
     
-      <category term="Common lisp" scheme="http://ioschen.com/tags/Common-lisp/"/>
+      <category term="Common lisp" scheme="https://ioschen.com/tags/Common-lisp/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[freebook]]></title>
-    <link href="http://ioschen.com/2014/03/30/freebook/"/>
-    <id>http://ioschen.com/2014/03/30/freebook/</id>
+    <link href="https://ioschen.com/2014/03/30/freebook/"/>
+    <id>https://ioschen.com/2014/03/30/freebook/</id>
     <published>2014-03-30T12:57:31.000Z</published>
     <updated>2015-11-03T13:26:06.000Z</updated>
     <content type="html"><![CDATA[<h1 id="免费的编程中文书籍索引">免费的编程中文书籍索引</h1><h3 id="转载地点"><a href="https://github.com/Yixiaohan/free-programming-books-zh_CN" target="_blank" rel="external">转载地点</a></h3><hr>
@@ -361,7 +361,7 @@
 <h2 id="参与交流">参与交流</h2><p>欢迎大家讲珍藏已久的经典免费书籍共享出来，您可以：</p>
 <ul>
 <li>使用 <a href="https://github.com/justjavac/free-programming-books-zh_CN/issues" target="_blank" rel="external">Issues</a> 以及 Pull Request </li>
-<li>发邮箱给我 <a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#106;&#117;&#x73;&#x74;&#106;&#x61;&#118;&#x61;&#99;&#43;&#x67;&#x68;&#x62;&#111;&#x6f;&#107;&#115;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#109;">&#106;&#117;&#x73;&#x74;&#106;&#x61;&#118;&#x61;&#99;&#43;&#x67;&#x68;&#x62;&#111;&#x6f;&#107;&#115;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#109;</a></li>
+<li>发邮箱给我 <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x6a;&#x75;&#x73;&#x74;&#106;&#97;&#118;&#x61;&#99;&#x2b;&#x67;&#104;&#x62;&#111;&#111;&#x6b;&#x73;&#64;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#109;">&#x6a;&#x75;&#x73;&#x74;&#106;&#97;&#118;&#x61;&#99;&#x2b;&#x67;&#104;&#x62;&#111;&#111;&#x6b;&#x73;&#64;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#109;</a></li>
 <li>来 <a href="http://segmentfault.com/q/1010000000329895" target="_blank" rel="external">SegmentFault</a> 交流</li>
 </ul>
 <p><strong>注</strong>：看到有人 fork 此 repository，其实如果觉得有帮助，可以 star 或者 watch，<br>如果 fork 到你的 repositories 下则不能保证你的 repo 是最新的，除非是主动定期的 pull。</p>
@@ -604,14 +604,14 @@
     
     </summary>
     
-      <category term="资料分享" scheme="http://ioschen.com/tags/%E8%B5%84%E6%96%99%E5%88%86%E4%BA%AB/"/>
+      <category term="资料分享" scheme="https://ioschen.com/tags/%E8%B5%84%E6%96%99%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[ruby]]></title>
-    <link href="http://ioschen.com/2014/03/30/ruby/"/>
-    <id>http://ioschen.com/2014/03/30/ruby/</id>
+    <link href="https://ioschen.com/2014/03/30/ruby/"/>
+    <id>https://ioschen.com/2014/03/30/ruby/</id>
     <published>2014-03-30T12:13:11.000Z</published>
     <updated>2014-03-30T12:13:51.000Z</updated>
     <content type="html"><![CDATA[<p>ruby</p>
@@ -623,14 +623,14 @@
     
     </summary>
     
-      <category term="ruby" scheme="http://ioschen.com/tags/ruby/"/>
+      <category term="ruby" scheme="https://ioschen.com/tags/ruby/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[变量]]></title>
-    <link href="http://ioschen.com/2014/03/26/variable/"/>
-    <id>http://ioschen.com/2014/03/26/variable/</id>
+    <link href="https://ioschen.com/2014/03/26/variable/"/>
+    <id>https://ioschen.com/2014/03/26/variable/</id>
     <published>2014-03-25T18:11:27.000Z</published>
     <updated>2014-04-06T11:12:28.000Z</updated>
     <content type="html"><![CDATA[<h1 id="引子">引子</h1><p>基本程序构造单元——变量。</p>
@@ -689,14 +689,14 @@
     
     </summary>
     
-      <category term="Common lisp" scheme="http://ioschen.com/tags/Common-lisp/"/>
+      <category term="Common lisp" scheme="https://ioschen.com/tags/Common-lisp/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[函数]]></title>
-    <link href="http://ioschen.com/2014/03/25/function/"/>
-    <id>http://ioschen.com/2014/03/25/function/</id>
+    <link href="https://ioschen.com/2014/03/25/function/"/>
+    <id>https://ioschen.com/2014/03/25/function/</id>
     <published>2014-03-25T12:57:35.000Z</published>
     <updated>2014-03-27T08:02:24.000Z</updated>
     <content type="html"><![CDATA[<h1 id="书接上文">书接上文</h1><p>有了语法和语义规则以后，所有lisp程序的三个最基本组成部分就是函数，变量和宏。一开始数据库建立就全部使用了，现在开始详细学习，首先学习函数，和其它语言一样，函数提供了用于抽象和功能化的基本方法 </p>
@@ -986,14 +986,14 @@ NIL
     
     </summary>
     
-      <category term="Common lisp" scheme="http://ioschen.com/tags/Common-lisp/"/>
+      <category term="Common lisp" scheme="https://ioschen.com/tags/Common-lisp/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[语法]]></title>
-    <link href="http://ioschen.com/2014/03/23/yufa/"/>
-    <id>http://ioschen.com/2014/03/23/yufa/</id>
+    <link href="https://ioschen.com/2014/03/23/yufa/"/>
+    <id>https://ioschen.com/2014/03/23/yufa/</id>
     <published>2014-03-23T06:28:09.000Z</published>
     <updated>2014-03-28T03:13:30.000Z</updated>
     <content type="html"><![CDATA[<h1 id="括号里都有神马">括号里都有神马</h1><h1 id="S-表达式">S-表达式</h1><p>s-表达式基本元素是列表和原子。列表由括号包围，并可包含任何数量的由空格所分隔的元素。</p>
@@ -1142,14 +1142,14 @@ NIL
 <h2 id=]]>
     </summary>
     
-      <category term="Common lisp" scheme="http://ioschen.com/tags/Common-lisp/"/>
+      <category term="Common lisp" scheme="https://ioschen.com/tags/Common-lisp/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[iphoneSize]]></title>
-    <link href="http://ioschen.com/2014/03/21/iphonesize/"/>
-    <id>http://ioschen.com/2014/03/21/iphonesize/</id>
+    <link href="https://ioschen.com/2014/03/21/iphonesize/"/>
+    <id>https://ioschen.com/2014/03/21/iphonesize/</id>
     <published>2014-03-21T00:53:44.000Z</published>
     <updated>2014-03-21T01:58:32.000Z</updated>
     <content type="html"><![CDATA[<table>
@@ -1297,14 +1297,14 @@ NIL
     
     </summary>
     
-      <category term="ios" scheme="http://ioschen.com/tags/ios/"/>
+      <category term="ios" scheme="https://ioschen.com/tags/ios/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[简单的数据库]]></title>
-    <link href="http://ioschen.com/2014/03/19/singlesql/"/>
-    <id>http://ioschen.com/2014/03/19/singlesql/</id>
+    <link href="https://ioschen.com/2014/03/19/singlesql/"/>
+    <id>https://ioschen.com/2014/03/19/singlesql/</id>
     <published>2014-03-19T12:31:31.000Z</published>
     <updated>2014-03-23T06:31:12.000Z</updated>
     <content type="html"><![CDATA[<h1 id="CD和记录">CD和记录</h1><p>为了记录一些CD中MP3的信息，需要做一个数据库。<br>数据库每条记录包含CD标题和艺术家信息，一个多少用户喜欢它的评级，以及一个表示是否已经转换过的标记。<br>所以，需要一种方式表示一条数据库的记录（也就是一仗CD）最简单的就是使用列表</p>
@@ -1442,14 +1442,14 @@ NIL
     
     </summary>
     
-      <category term="Common lisp" scheme="http://ioschen.com/tags/Common-lisp/"/>
+      <category term="Common lisp" scheme="https://ioschen.com/tags/Common-lisp/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Common lisp]]></title>
-    <link href="http://ioschen.com/2014/03/18/lisp/"/>
-    <id>http://ioschen.com/2014/03/18/lisp/</id>
+    <link href="https://ioschen.com/2014/03/18/lisp/"/>
+    <id>https://ioschen.com/2014/03/18/lisp/</id>
     <published>2014-03-18T12:41:38.000Z</published>
     <updated>2014-03-19T12:30:12.000Z</updated>
     <content type="html"><![CDATA[<h1 id="我为什么学习lisp">我为什么学习lisp</h1><p>至于我为什么学习lisp，这一切都源于Emacs，因为Emacs我知道了lisp，知道它很牛逼，在一些unix论坛也发现很多人说lisp很牛逼。后来学习了几天就没有坚持下去，至于没有坚持下去可能是觉得这个没什么用处吧，这次看完黑客与画家又一次听说lisp很牛逼，实在无法忍受，于是这次开始学习lisp。看看到底有没有外界说的那么牛逼。思想上能有什么启发。</p>
@@ -1478,14 +1478,14 @@ NIL
     
     </summary>
     
-      <category term="Common lisp" scheme="http://ioschen.com/tags/Common-lisp/"/>
+      <category term="Common lisp" scheme="https://ioschen.com/tags/Common-lisp/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[anytime]]></title>
-    <link href="http://ioschen.com/2014/02/22/anytime/"/>
-    <id>http://ioschen.com/2014/02/22/anytime/</id>
+    <link href="https://ioschen.com/2014/02/22/anytime/"/>
+    <id>https://ioschen.com/2014/02/22/anytime/</id>
     <published>2014-02-22T12:36:41.000Z</published>
     <updated>2014-03-08T16:26:09.000Z</updated>
     <content type="html"><![CDATA[<p>好久没有写了，今天写一个留下，看看有没有生疏</p>
@@ -1501,8 +1501,8 @@ NIL
   
   <entry>
     <title><![CDATA[game]]></title>
-    <link href="http://ioschen.com/2014/01/20/game/"/>
-    <id>http://ioschen.com/2014/01/20/game/</id>
+    <link href="https://ioschen.com/2014/01/20/game/"/>
+    <id>https://ioschen.com/2014/01/20/game/</id>
     <published>2014-01-20T01:03:01.000Z</published>
     <updated>2014-01-20T03:13:11.000Z</updated>
     <content type="html"><![CDATA[<p>#游戏开发<br>游戏开发最重要的就是选好游戏引擎</p>
@@ -1605,7 +1605,7 @@ NIL
     
     </summary>
     
-      <category term="game" scheme="http://ioschen.com/tags/game/"/>
+      <category term="game" scheme="https://ioschen.com/tags/game/"/>
     
   </entry>
   
